@@ -1,0 +1,120 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > img {
+  width: 4.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+}
+
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited {
+  color: var(--secondary-color);
+}
+nav ul li a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* MAIN-CONTENT ================= */
+main {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  align-items: center;
+}
+
+main h1 {
+  font-weight: 200;
+  font-size: 6rem;
+}
+main h2 {
+  margin-top: -3rem;
+  font-weight: 700;
+  font-size: 5.5rem;
+}
+
+.underline {
+  height: 3px;
+  width: 10.6rem;
+  margin-left: 0.6rem;
+  background-color: var(--primary-color);
+}
+
+main p {
+  margin: 4rem 0;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.buttons a,
+.buttons a:link,
+.buttons a:visited {
+  padding: 1rem 4rem;
+  border-radius: 99px;
+  border: 2px solid var(--primary-color);
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.buttons a:hover {
+  transform: translateY(-2px);
+}
+.buttons a:active {
+  transform: translateY(0);
+}
+.button-home:link,
+.button-home:visited {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.button-back {
+  color: var(--primary-color);
+}
+
+/* FOOTER ================= */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > div {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.fa-brands {
+  color: var(--tertiary-color);
+  font-size: 2rem;
+  transition: all 0.4s;
+}
+.fa-brands:hover {
+  color: var(--primary-color);
+  transform: scale(1.2) translateY(-2px);
+}
+.fa-brands:active {
+  transform: scale(1) translateY(0);
+}

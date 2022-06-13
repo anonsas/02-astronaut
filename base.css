@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
 :root {
-  --font-base: 'DM Sans', sans-serif;
+  --font-base: 'Roboto', sans-serif;
   --primary-color: #66448a;
   --secondary-color: #222222;
+  --tertiary-color: #cbcccc;
 }
 
 *,
@@ -25,12 +26,19 @@ body {
   font-weight: 400;
   line-height: 1.6;
 
-  font-size: 1.6rem; /* 16px or style elements individually */
+  font-size: 1.6rem;
   min-height: 100vh; /* body - takes the full screen */
+  width: 100rem;
+  margin: 0 auto;
+  color: var(--secondary-color);
+  padding: 3rem 0;
+
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
 }
 
 /* Changing the style of selected text */
 ::selection {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: #fff;
 }
