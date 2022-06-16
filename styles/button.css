@@ -1,0 +1,24 @@
+.btn,
+.btn:link,
+.btn:visited {
+  font-weight: 500;
+  padding: 0.6em 2.5em;
+  border-radius: 10em;
+  color: var(--primary-color);
+  border: 0.12em solid var(--primary-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.4s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.btn-home:link,
+.btn-home:visited {
+  color: #fff;
+  background-color: var(--primary-color);
+}
